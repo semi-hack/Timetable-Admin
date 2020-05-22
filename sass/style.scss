@@ -1,0 +1,90 @@
+@font-face{
+    font-family: Gordita;
+    src: url("../fonts/gordita/Gordita Medium.otf")
+}
+
+@font-face{
+    font-family: Gordita;
+    src: url("../fonts/gordita/Gordita Regular.otf");
+    font-weight: normal;
+}
+$greyColor:  #737A91; 
+$blueColor: #0395FF; 
+$click-Btn-Color: #0077FF;
+$GorditaFont: Gordita; 
+
+.container{
+    display: flex;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    .logo{
+        margin-top: 60px; 
+        max-width: 50px;
+        max-height: 50px;
+    }
+    h1{
+        font: $GorditaFont;
+        font-size: 24px;
+        margin-top: 90px;
+    }
+    p{
+        font-size: 14px;
+        color: $greyColor;
+        margin-bottom: 65px;
+
+    }
+    .customized-input{
+        width: 400px;
+        font-family: $GorditaFont;
+        font-size: 14px;
+        font-weight: normal;
+        color: $greyColor;
+        &:focus{
+            border-color: #0077FF ;
+            outline: none;
+        }
+
+    }
+
+    .input-label{
+        font-size: 14px;
+        color: $greyColor;
+
+    }
+
+    .sign-in-btn{
+        width: 100%;
+        background-color: $blueColor;
+        margin-bottom: 40px;
+    }
+
+    .forget-password{
+        display: flex; 
+        justify-content: center;
+    }
+
+    span{
+        color: $greyColor;
+        font-size: 12px;
+    }
+
+    .click-button{
+        border: none;
+        color: $click-Btn-Color;
+        background-color: white;
+        font-family: $GorditaFont;
+        font-weight: normal;
+        font-size: 12px;
+        &:hover{
+            
+        }
+
+    }
+
+
+}
