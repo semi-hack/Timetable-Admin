@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Gordita;
+  src: "../fonts/gordita/Gordita Regular.otf";
+  font-weight: 500;
+}
+.body {
+  background-color: #E6EAEE;
+}
+
+.main-nav {
+  display: flex;
+  box-shadow: #FFFFFF 0px 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: white;
+}
+.main-nav img {
+  max-width: 50px;
+  height: 50px;
+  margin-left: 35px;
+  align-self: center;
+}
+.main-nav h1 {
+  font-family: Gordita;
+  font-size: 24px;
+  margin: 20px 35px;
+}
+.main-nav .notification {
+  max-width: 20px;
+  max-height: 20px;
+  align-self: center;
+  justify-self: flex-end;
+  margin-right: 10px;
+}
