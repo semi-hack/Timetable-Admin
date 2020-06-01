@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body class="body">
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Add New Courses
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body border-0">
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="input-label">Name</label>
+              <input
+                type="text"
+                class="form-control customized-input"
+                id=""
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="input-label"
+                >Course code </label
+              >
+              <select
+                class="form-control"
+              ></select>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="input-label"
+                >Course unit</label
+              >
+              <input
+                type="text"
+                class="form-control customized-input"
+                id=""
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="input-label"
+                >Professor</label
+              >
+              <select
+                class="form-control"
+              ></select>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="input-label"
+                >Venue</label
+              >
+              <select
+                class="form-control customized-input"
+              ></select>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-primary">Add Course</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="side-nav">
+        <ul class="nav-items">
+          <li class="one">
+            <a href="">
+            <img src="asserts/Ellipse 1.png" alt="Ellipse" class="Ellipse" />
+            Admin</a>
+          </li>
+
+          <li>
+            <a href="">
+            <img
+              src="asserts/gauge-dashboard 1.png"
+              alt="Dashboard"
+              class="Courses"
+            />
+            Dashboard</a>
+          </li>
+
+          <li>
+            <a href="">
+            <img src="asserts/house-1.svg" alt="Rooms" class="Courses" />
+            Rooms</a>
+          </li>
+
+          <li class="active">
+            <a href="">
+            <img
+              src="asserts/book-flip-page 1.png"
+              alt="Courses"
+              class="Courses"
+            />
+            Courses</a>
+          </li>
+
+          <li>
+            <a href="">
+            <img
+              src="asserts/people-man-graduate 1.png"
+              alt="Lecturers"
+              class="Courses"
+            />
+            Lecturers</a>
+          </li>
+
+          <li>
+            <a href="">
+            <img src="asserts/house-1.svg" alt="Classes" class="Courses" />
+            Classes</a>
+          </li>
+
+          <li>
+            <a href="">
+            <img
+              src="asserts/time-clock-circle 1.png"
+              alt="Periods"
+              class="Courses"
+            />
+            Periods</a>
+          </li>
+
+          <li>
+            <a href="">
+            <img
+              src="asserts/single-man-profile-picture.png"
+              alt="My"
+              class="Courses"
+            />
+            My Account</a>
+          </li>
+
+          <li class="last">
+            <a href="">
+            <img
+              src="asserts/Vector (1).svg"
+              alt="My"
+              class="Courses"
+            />
+            Logout</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-content">
+        <nav class="main-nav">
+          <img src="asserts/Logo.png" alt="logo" class="logo" />
+          <h1>Courses</h1>
+          <img
+            src="asserts/alarm-bell@3x.png"
+            alt="notification-icon"
+            class="notification"
+          />
+        </nav>
+        <div class="container">
+          <div class="search">
+            <input
+              type="text"
+              class="form-control customized-input"
+              placeholder="Enter keyword to search"
+            />
+            <!-- Button to Open the Modal -->
+            <button class="but" data-toggle="modal" data-target="#exampleModal">
+              <img src="asserts/ic-add-48px 1.svg" alt="logo" class="logo" />Add
+              new Course
+            </button>
+          </div>
+          <div class="table-comtainer">
+            <table class="table table-sm">
+              <thead class="table-head">
+                <tr class="row1">
+                  <th>Course code</th>
+                  <th>Course Name</th>
+                  <th>Course Unit</th>
+                  <th>Lecturer</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody class="gfg">
+                <tr class="default">
+                  <td>Lecture Room 1</td>
+                  <td>Agric and bio systems mathematics</td>
+                  <td>2 Units</td>
+                  <td>Prof.Abiodun suleiman</td>
+                  <td>
+                    <img
+                      src="asserts/pencil 1.png"
+                      alt="pencil"
+                      class="pencil"
+                    />
+                    <img
+                      src="asserts/bin-2-alternate 1.png"
+                      alt="bin"
+                      class="bin"
+                    />
+                  </td>
+                </tr>
+                <tr class="space">
+                  <td colspan="5"></td>
+                </tr>
+                <tr class="default">
+                  <td>Lecture Room 1</td>
+                  <td>Agric and bio systems mathematics</td>
+                  <td>2 units</td>
+                  <td>Prof.Abiodun suleiman</td>
+                  <td>
+                    <img
+                      src="asserts/pencil 1.png"
+                      alt="pencil"
+                      class="pencil"
+                    />
+                    <img
+                      src="asserts/bin-2-alternate 1.png"
+                      alt="bin"
+                      class="bin"
+                    />
+                  </td>
+                </tr>
+                <!-- <tr>
+                  <td>Lecture room 1</td>
+                  <td>110</td>
+                  <td>
+                    <img
+                      src="asserts/pencil 1.png"
+                      alt="pencil"
+                      class="pencil"
+                    />
+                    <img
+                      src="asserts/bin-2-alternate 1.png"
+                      alt="bin"
+                      class="bin"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lecture room 1</td>
+                  <td>110</td>
+                  <td>
+                    <img
+                      src="asserts/pencil 1.png"
+                      alt="pencil"
+                      class="pencil"
+                    />
+                    <img
+                      src="asserts/bin-2-alternate 1.png"
+                      alt="bin"
+                      class="bin"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lecture room 1</td>
+                  <td>110</td>
+                  <td>
+                    <img
+                      src="asserts/pencil 1.png"
+                      alt="pencil"
+                      class="pencil"
+                    />
+                    <img
+                      src="asserts/bin-2-alternate 1.png"
+                      alt="bin"
+                      class="bin"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lecture room 1</td>
+                  <td>110</td>
+                  <td>
+                    <img
+                      src="asserts/pencil 1.png"
+                      alt="pencil"
+                      class="pencil"
+                    />
+                    <img
+                      src="asserts/bin-2-alternate 1.png"
+                      alt="bin"
+                      class="bin"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lecture room 1</td>
+                  <td>110</td>
+                  <td>
+                    <img
+                      src="asserts/pencil 1.png"
+                      alt="pencil"
+                      class="pencil"
+                    />
+                    <img
+                      src="asserts/bin-2-alternate 1.png"
+                      alt="bin"
+                      class="bin"
+                    />
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
