@@ -1,0 +1,242 @@
+@font-face {
+  font-family: Gordita;
+  src: "../fonts/gordita/Gordita Regular.otf";
+  font-weight: 500;
+}
+.body {
+  background: #e5e5e5;
+}
+
+.modal.show .modal-dialog {
+  -webkit-transform: none;
+  transform: none;
+  justify-content: center;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  min-height: calc(100vh - 250px);
+}
+
+.modal-title {
+  margin-bottom: 0;
+  font-family: gordita;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modal-body {
+  font-family: Gordita;
+  font-weight: bold;
+}
+
+.modal-footer {
+  justify-content: center !important;
+  font-weight: bold;
+}
+
+.btn-primary {
+  font-family: Gordita;
+  border-radius: 15px !important;
+  width: 180px;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: red !important;
+  border-color: red !important;
+  border-radius: 15px !important;
+  width: 120px;
+  font-family: Gordita;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.active {
+  border-left: 3px solid #0395ff;
+}
+
+.wrapper .main-content .main-nav {
+  display: flex;
+  box-shadow: #ffffff 0px 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  min-height: 3.75rem;
+  min-width: 100%;
+  position: relative;
+}
+
+.wrapper .main-content .main-nav img {
+  width: 50px;
+  height: 50px;
+  margin: 0 35px;
+  align-self: center;
+}
+
+.wrapper .main-content .main-nav h1 {
+  font-family: Gordita;
+  font-style: normal;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.main-nav .notification {
+  max-width: 20px;
+  max-height: 20px;
+  right: 140px;
+  align-self: center;
+  position: absolute;
+  justify-self: flex-end;
+  margin-right: 10px;
+}
+
+.wrapper .side-nav {
+  position: fixed;
+  height: 100%;
+  width: 81px;
+  left: 0;
+  box-shadow: inset 0px 0px 20px rgba(103, 103, 103, 0.1);
+  background: #eaeff3;
+}
+
+.wrapper .main-content {
+  width: -webkit-fill-available;
+  margin-left: 81px;
+}
+
+.wrapper .side-nav ul {
+  padding: 0;
+  height: 100%;
+  margin: 20px 0 0;
+}
+
+.wrapper .side-nav ul li a {
+  display: flex;
+  height: 100%;
+  font: 12px Gordita;
+  text-align: center;
+  color: #737a91;
+  font-weight: 500;
+  flex-direction: column;
+  text-decoration: none;
+}
+.wrapper .side-nav ul li {
+  width: 100%;
+  height: 50px;
+  list-style: none;
+  margin-bottom: 20px;
+  position: relative;
+  border-bottom: 1px solid rgba();
+}
+
+.wrapper .side-nav .Ellipse {
+  border-radius: 50%;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.Courses {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.last {
+  position: absolute !important;
+  bottom: 30px !important;
+}
+
+
+.container .customized-input {
+  width: 400px;
+  font-family: Gordita;
+  font-size: 18px;
+  font-weight: normal;
+  color: #737a91;
+  background: #ffffff;
+  border: 1px solid #e9ebee;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  margin: 30px;
+}
+
+.search input[type="text"] {
+  font-family: Gordita;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  /* identical to box height, or 161% */
+  letter-spacing: -0.03em;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.but {
+  right: 140px;
+  position: absolute;
+  color: #0395FF !important;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.container .table {
+  position: relative;
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+.table-head {
+  color: white;
+}
+
+td,
+th {
+  text-align: center !important;
+}
+
+.table .default {
+  background: #e8f1f9;
+}
+
+.table .space {
+  background: white;
+  height: 20px;
+}
+
+.container .table .table-head .row1 {
+  background: #0395ff;
+}
+
+.gfg {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.bin {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.pencil {
+  max-width: 20px;
+  max-height: 20px;
+}
